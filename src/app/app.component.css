@@ -2,3 +2,7 @@
 .app {
     min-height: 100vh;
   }
+
+.loadingSpinner {
+  margin-top: 150px;
+}

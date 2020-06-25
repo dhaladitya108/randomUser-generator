@@ -15,10 +15,12 @@ export class AppComponent implements OnInit {
     private toastr: ToastrService
   ) {}
 
+  reloadOnCard() {
+    this.ngOnInit();
+  }
   ngOnInit() {
     this.userService.getUser().subscribe(
-      (user: any) => { 
-        console.log(user);
+      (user: any) => {
         this.user = user.results[0];
       },
       (err) => {
